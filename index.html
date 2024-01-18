@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+
+        <div class="snippet" data-title="practice">
+            <div class="stage">
+                <div class="practice left"></div>
+                <div class="practice center"></div>
+                <div class="practice right"></div>
+            </div>
+        </div>
+
+        <div class="snippet" data-title="practice2">
+            <div class="stage2">
+                <div class="practice2 left"></div>
+                <div class="practice2 center"></div>
+                <div class="practice2 right"></div>
+            </div>
+        </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+<style>
+  html,
+  body {
+    height: 100%;
+    background: #f6f7fd;
+    font-size: 16px;
+  }
+
+  .snippet {
+    position: relative;
+    background: #fff;
+    padding: 32px 5%;
+    margin: 24px 0;
+    box-shadow: 0 4px 12px -2px rgba(0, 32, 128, 0.1),
+      0 0 0 1px rgba(60, 80, 120, 0.1);
+    border-radius: 16px;
+  }
+
+  .snippet::before {
+    display: inline-block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    padding: 0 8px;
+    content: attr(data-title);
+    font-size: 12px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
+    color: white;
+    background-color: rgb(255, 25, 100);
+    border-radius: 10px;
+    line-height: 20px;
+  }
+
+  .snippet:hover {
+    cursor: pointer;
+    outline: 2px solid rgb(255, 25, 100);
+  }
+
+  .stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 32px 0;
+    margin: 0 -5%;
+    overflow: hidden;
+    gap: 10px;
+  }
+
+  .stage2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 32px 0;
+    margin: 0 -5%;
+    overflow: hidden;
+    gap: 6px;
+  }
+
+</style>
