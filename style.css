@@ -1,0 +1,61 @@
+/* practice1 */
+
+.practice {
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+  position: relative;
+  background-color: green;
+  animation: practice 0.6s infinite linear alternate;
+}
+
+.practice.left {
+  animation-delay: 0;
+}
+.practice.center {
+  animation-delay: 0.25s;
+}
+.practice.right {
+  animation-delay: 0.5s;
+}
+
+@keyframes practice {
+  0% {
+    background-color: rgba(0, 128, 0, 0.2);
+  }
+  100% {
+    background-color: green;
+    transform: scale(2, 2);
+  }
+}
+
+/* practice2 */
+
+.practice2 {
+  width: 5px;
+  height: 7px;
+  border-radius: 3.5px;
+  position: relative;
+  background-color: green;
+  animation: practice2 0.6s infinite linear alternate;
+}
+
+.practice2.left {
+  animation-delay: 0;
+}
+.practice2.center {
+  animation-delay: 0.25s;
+}
+.practice2.right {
+  animation-delay: 0.5s;
+}
+
+@keyframes practice2 {
+  0% {
+    background-color: rgba(0, 128, 0, 0.2);
+  }
+  100% {
+    background-color: green;
+    transform: scale(1, 3);
+  }
+}
